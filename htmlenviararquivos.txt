@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="fixed w-full flex items-center justify-center py-3 z-40">
+      <img
+        class="w-32"
+        src="https://intranet.bbts.com.br/templates/intranet/images/logo.png"
+        alt="Logo bbts"
+      />
+    </header>
+
+    <section
+      class="relative w-full bg-[#FCFC30] h-screen flex items-center justify-center p-3 z-10 overflow-hidden before:w-screen before:h-screen before:bg-[#465EFF] before:rounded-bl-full before:absolute before:-right-1/2 before:top-0 before:-z-20"
+    >
+      <div class="w-full max-w-2xl flex-col flex bg-white p-2 gap-2 rounded-md">
+        <div
+          class="flex flex-col flex-1 min-w-[300px] bg-white h-24 rounded-full text-center rounded-md"
+        >
+          <h1 class="text-2xl font-semi-bold text-grey-900 mb-5">
+            Upload de Arquivos
+          </h1>
+          <p class="text-lg font-semi-bold text-grey-900">
+            Aqui será possível realizar upload de arquivos utilizando um simples
+            botão de seleção e outro de submição
+          </p>
+        </div>
+        <div
+          class="flex flex-1 min-w-[300px] bg-white h-24 rounded-full justify-start rounded-md"
+        >
+          <input
+            class="text-center rounded-md relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 dark:border-neutral-600 bg-clip-padding py-[0.32rem] px-3 text-base font-normal text-neutral-700 dark:text-neutral-200 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 dark:file:bg-neutral-700 file:px-3 file:py-[0.32rem] file:text-neutral-700 dark:file:text-neutral-100 file:transition file:duration-150 file:ease-in-out file:[margin-inline-end:0.75rem] file:[border-inline-end-width:1px] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-[0_0_0_1px] focus:shadow-primary focus:outline-none cursor-pointer"
+            type="file"
+            id="formFile"
+          />
+          <button
+            for="formFile"
+            class="bg-[#465EFF] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full border-2 border-white"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
